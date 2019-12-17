@@ -1,0 +1,10 @@
+ Wait, notify, notifyAll
+ 
+ - wait : 현재 실행중인 스레드를 대기 시키는 것이다. 호출되면 현재 실행중인 스레드가 waiting pool에들어간다.
+		  notify, notifyAll메소드가 호출되면 Runnable상태로 되돌아온다.
+		  (long timeout, int nanos)이둘은 현재 실행중인 스레드를 대기 시키는 메소드이다. 지정된 시간이 경과하거나
+		  호출되면 되돌아간다.
+		  
+ - notify : waiting pool에 대기중인 스레드 하나를 Runnable상태로 돌린다.
+		  
+ - notifyAll : waiting pool에 대기중인 스레드 전체를 Runnable상태로 돌린다.
